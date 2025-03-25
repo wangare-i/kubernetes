@@ -4,12 +4,12 @@ ConfigMaps & Secrets: What They Solve
 A ConfigMap stores non-sensitive configuration data like database ports, URLs, and feature flags. A Secret stores sensitive information like passwords and API keys.
 Creating a ConfigMap
 You created a ConfigMap to store your database port:-
-apiVersion: v1
+```apiVersion: v1
 kind: ConfigMap
 metadata:
   name: test-cm
 data:
-  db-port: "3306"
+  db-port: "3306" ```
 Applying it:
 kubectl apply -f cm.yml
 Verifying:

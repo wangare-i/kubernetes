@@ -3,7 +3,7 @@ When managing configurations and sensitive data in Kubernetes, you can either us
 ConfigMaps & Secrets: What They Solve
 A ConfigMap stores non-sensitive configuration data like database ports, URLs, and feature flags. A Secret stores sensitive information like passwords and API keys.
 Creating a ConfigMap
-You created a ConfigMap to store your database port:
+You created a ConfigMap to store your database port:-
 apiVersion: v1
 kind: ConfigMap
 metadata:
